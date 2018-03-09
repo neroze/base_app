@@ -1,21 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Root from './rootNode'
+import Init from './hooks/init'
 
-class App extends Component {
+console.log('Init -->', Init);
+
+
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loadApp: false
+    }
+  }
+
+  componentDidMount = () => {
+    Init.start().then(() => {
+      this.setState({
+        loadApp: true
+      })
+    })
+  }
+
   render() {
+    const {loadApp} = this.state;
+    console.log('load APp ==> ', loadApp);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+      {
+        loadApp ? <Root/> :
+        <div>We are loading... Will mount after 5 seconds</div>
+      }
       </div>
     );
   }
 }
-
-export default App;
