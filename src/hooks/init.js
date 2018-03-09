@@ -1,9 +1,13 @@
+
+const debug = true
+let App = {}
 const Hook = {
 	start() {
-		// return Promise.all([
 
-		// ])
-
+		if (debug) {
+			
+			window.app = App 	// eslint-disable-line
+		}
 		return new Promise(function(resolve, reject) {
 
 			Promise.all([
