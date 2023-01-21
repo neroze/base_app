@@ -4292,9 +4292,14 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
+"lodash@>=3.5 <5", lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.3.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+
+lodash@^4.17.10, lodash@^4.17.11:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loglevel@^1.4.1:
   version "1.6.1"
@@ -4527,9 +4532,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdi
   dependencies:
     minimist "0.0.8"
 
-moment@^2.20.1:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.21.0.tgz#2a114b51d2a6ec9e6d83cf803f838a878d8a023a"
+moment@^2.23.0:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.0.0:
   version "2.0.0"
@@ -5991,19 +5997,21 @@ sane@~1.6.0:
     walker "~1.0.5"
     watch "~0.10.0"
 
-sarala-json-api-data-formatter@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/sarala-json-api-data-formatter/-/sarala-json-api-data-formatter-0.1.0.tgz#05ed1b5f75cab81be772a02da395920076068d79"
+sarala-json-api-data-formatter@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/sarala-json-api-data-formatter/-/sarala-json-api-data-formatter-1.0.6.tgz#f9e803313db510501f4b9e9529a7488b499d16a2"
+  integrity sha512-LpMFstUvkhz3QT6oYRyd7O+SmIbLKQBCXSoKai7aOPjzr2aka5YXgsD2YG4Abgj0uFxFy5t4o7sTZzG2AzqNxQ==
   dependencies:
-    lodash "^4.17.5"
+    lodash "^4.17.10"
 
-sarala@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/sarala/-/sarala-0.2.1.tgz#fc91b32b1c33cf20f04bee25371defda20ea4e27"
+sarala@^0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/sarala/-/sarala-0.3.10.tgz#a5cf13a58af05bd4fb99679ed805944c11c9ceca"
+  integrity sha512-KKQSs7J6NVDjREaEVaMHHqjhorMbpQfArtUsTcLwazocGGcgcxaTM5ZvHqcsILY2//rI4J5sD1HIAD1ttqqy/A==
   dependencies:
-    lodash "^4.17.5"
-    moment "^2.20.1"
-    sarala-json-api-data-formatter "^0.1.0"
+    lodash "^4.17.11"
+    moment "^2.23.0"
+    sarala-json-api-data-formatter "^1.0.6"
 
 sax@^1.2.1, sax@~1.2.1:
   version "1.2.4"
